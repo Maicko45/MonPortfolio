@@ -96,10 +96,9 @@ nav li {
 	line-height: 1.25em;
 }
 
-#Travaux {
-	width: 100vw;
+#ImagesBox {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	overflow: hidden;
 	font-size: 2em;
 	font-weight: 800;
