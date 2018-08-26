@@ -71,3 +71,33 @@ header nav ul {
 nav li {
     margin: 2em;
 }
+
+#AccueilTop {
+	background-color: #009fe3;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-evenly;
+	height: 25vh;
+	width: 100vw;
+	padding: 1em;
+}
+
+#AccueilTop h1 {
+	display: flex;
+	justify-self: center;
+	margin-bottom: 2em;
+
+}
+
+.IntroAnael {
+	display: flex;
+	justify-content: flex-end;
+	width: 40%;
+	line-height: 1.25em;
+}
+
+#Travaux
+.ImagesTravaux {
+	max-width: 25%;
+	height: auto;
+}
