@@ -96,8 +96,20 @@ nav li {
 	line-height: 1.25em;
 }
 
-#Travaux
+#Travaux {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	font-size: 2em;
+	font-weight: 800;
+	padding-left: 5%;
+}
 .ImagesTravaux {
-	max-width: 25%;
-	height: auto;
+	margin-top: 0.5vh;
+	display: flex;
+	justify-content: space-between;
+	max-width: 20%;
+	height: 20%;
+	overflow: hidden;
 }
