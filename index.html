@@ -7,50 +7,138 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mugerin Anaël - Webdesigner basé à Avignon</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function () {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS &&
+                window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(
+                t), e
+        };
+        supportsCssVars() || alert("Vous devez utiliser un navigateur moderne qui supporte les variables CSS.");
+    </script>
 </head>
 
 <body>
+
     <header>
         <nav>
             <ul>
-                <li><a></a>Accueil</a></li>
-                <li><a></a>Travaux</a></li>
-                <li><a></a>À propos de moi</a></li>
-                <li><a></a>Contact</a></li>
+                <li>
+                    <a href="#AccueilTop">Accueil</a>
+                </li>
+                <li>
+                    <a href="#Travaux">Travaux</a>
+                </li>
+                <li>
+                    <a href="#APropos">À propos de moi</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+                <li>
+                    <a href="http://www.anaelmugerin.com">version alternative</a>
+                </li>
             </ul>
         </nav>
+        <div id="top"></div>
     </header>
     <section id="AccueilTop">
         <h1>Mugerin Anaël</h1>
-        <p class="IntroAnael"> Bienvenue je suis un jeune webdesigner d'Avignon.<br> 
-            Je m’intéresse à tout ce qui entoure mon domaine (3D, réalité virtuelle/augmentée, machine learning et intelligences
-            artificielles).<br> 
-            Je suis quelqu’un de dynamique et je n’ai pas peur de se lancer dans de nouveaux challenges. <br>
-            Je suis aussi créatif et plein de ressources qui me permettent d’être polyvalent.
+        <p class="IntroAnael"> Bienvenue je suis un jeune webdesigner d'Avignon.
+            <br> Je m’intéresse à tout ce qui entoure mon domaine (3D, réalité virtuelle/augmentée, machine learning et intelligences
+            artificielles).
+            <br> Je suis quelqu’un de dynamique et je n’ai pas peur de se lancer dans de nouveaux challenges.
+            <br> Je suis aussi créatif et plein de ressources qui me permettent d’être polyvalent.
         </p>
     </section>
     <section id="Travaux">
-        <h2>Travaux</h2>
-        <div id="ImagesBox">
-        <div class="ImagesTravaux"><img src="/content/albator-street.jpg" alt="Albator-Photomontage"></div>
-        <div class="ImagesTravaux"><img src="/content/calavera-1.jpg" alt="Calavera"></div>
-        <div class="ImagesTravaux"><img src="/content/double-expo-tableau.jpg" alt="DoubleExposition-Photoshop"></div>
-        <div class="ImagesTravaux"><img src="/content/dresspapergirl1.jpg" alt=""></div>
-        <div class="ImagesTravaux"><img src="/content/ex-logo-et-fond d'écran.jpg" alt=""></div>
-        <div class="ImagesTravaux"><img src="/content/girl2.jpg" alt=""></div>
-        <div class="ImagesTravaux"><img src="/content/Glaces.jpg" alt=""></div>
-        <div class="ImagesTravaux"><img src="/content/jetsetsun_home.jpg" alt=""></div>
-        <div class="ImagesTravaux"><img src="/content/Guadeloupéenne-NewYork_final.jpg" alt=""></div>
-        <div class="ImagesTravaux"><img src="/content/honey.jpg" alt=""></div>
-        <div class="ImagesTravaux"><img src="/content/volonté.jpg" alt=""></div>
-        <div class="ImagesTravaux"><img src="/content/sylvidre1.jpg" alt=""></div>
-        <div class="ImagesTravaux"><img src="/content/poster_1b.gif" alt=""></div>
-        <div class="ImagesTravaux"><img src="/content/korotel8ex.jpg" alt=""></div>
-        <div class="ImagesTravaux"><img src="/content/Plan de travail 1.jpg" alt=""></div>
-    </div>
+        <h2 class="SectionTitle">Travaux</h2>
+        <div class="content">
+            <!-- Pieces Slider -->
+            <div class="pieces-slider">
+                <!-- Each slide with corresponding image and text -->
+                <div class="pieces-slider__slide">
+                    <img class="pieces-slider__image" src="content/albator-street.jpg" alt="">
+                    <h2 class="pieces-slider__text">Albator</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                    <img class="pieces-slider__image" src="/content/calavera-1.jpg" alt="">
+                    <h2 class="pieces-slider__text">Calavera</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                    <img class="pieces-slider__image" src="/content/girl2.jpg" alt="">
+                    <h2 class="pieces-slider__text">Peinture numérique</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                    <img class="pieces-slider__image" src="content/Montagne.jpg" alt="">
+                    <h2 class="pieces-slider__text">Peinture numérique</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                    <img class="pieces-slider__image" src="content/Image-chaîne-youtube.jpg" alt="">
+                    <h2 class="pieces-slider__text">Design chaîne Youtube</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                    <img class="pieces-slider__image" src="content/lexycar_site.jpg" alt="">
+                    <h2 class="pieces-slider__text">Web Design</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                    <img class="pieces-slider__image" src="content/dresspapergirl1.jpg" alt="">
+                    <h2 class="pieces-slider__text">Incrustation sur photo</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="content/jetsetsun_home.jpg" alt="">
+                        <h2 class="pieces-slider__text">Web Design</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="content/honey.jpg" alt="">
+                        <h2 class="pieces-slider__text">Illustration</h2>
+                    </div>
+                    <div class="pieces-slider__slide">
+                            <img class="pieces-slider__image" src="content/portrait_blonde.jpg" alt="">
+                            <h2 class="pieces-slider__text">Peinture numérique</h2>
+                        </div>
+                <!-- Canvas to draw the pieces -->
+                <canvas class="pieces-slider__canvas"></canvas>
+                <!-- Slider buttons: prev and next -->
+                <button class="pieces-slider__button pieces-slider__button--prev">prec</button>
+                <button class="pieces-slider__button pieces-slider__button--next">suiv</button>
+            </div>
+        </div>
     </section>
-    <Section id="APropos"></Section>
-    <Section id="Contact"></Section>
+    <Section id="APropos">
+        <h2 class="SectionTitle">À propos de moi</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto natus similique molestias aliquid ut, ea deleniti
+            consectetur ab perspiciatis doloremque nostrum explicabo quaerat ipsa odio possimus rerum illo. Tenetur exercitationem
+            architecto doloribus deserunt est maiores assumenda voluptas? A fugit deleniti quaerat? Expedita eaque doloremque
+            mollitia ad voluptatibus, at earum ratione temporibus quo rerum debitis quod ut dolorem, minus culpa delectus
+            magni tempore soluta officiis repudiandae porro maiores animi. Doloremque consequuntur nam est! Modi amet esse
+            et dolorum quae, repudiandae labore quisquam iste quas maxime praesentium delectus excepturi ipsum molestiae
+            consectetur nobis enim. Et blanditiis dolores totam molestias nostrum! Repudiandae iste ea necessitatibus, nobis
+            eum magni, dolore mollitia rerum in molestias et a beatae quisquam dolorem, officia voluptate ex nihil perspiciatis
+            possimus totam! Eius, harum et vero incidunt eos natus, nobis, excepturi facere doloribus nostrum adipisci consectetur
+            tempore necessitatibus molestias aperiam maiores.
+        </p>
+        <h3>langues parlées</h3>
+        <div class="langues">
+            <img src="/content/anglais.svg" alt="Anglais">
+            <img src="/content/espagne.svg" alt="Espagnol">
+            <img src="/content/portugal.svg" alt="Portugais">
+        </div>
+    </Section>
+    <Section id="Contact">
+        <h2 class="SectionTitle">Contact</h2>
+        <h4>Vous pouvez me contacter en cliquant sur le lien ci-dessous.</h4>
+        <a href="mailto:anael.mugerin@gmail.com"></a>
+        <a href="#top" id="back">retour en haut</a>
+
+    </Section>
+
+    <script src='js/anime.min.js'></script>
+    <script src='js/pieces.min.js'></script>
+    <script src='js/slider.js'></script>
 </body>
 
 </html>
