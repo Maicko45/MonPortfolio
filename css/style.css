@@ -142,7 +142,8 @@ nav li {
 }
 .IntroAnael {
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: column;
+	align-items: center;
 	width: 40%;
 	line-height: 1.25em;
 }
